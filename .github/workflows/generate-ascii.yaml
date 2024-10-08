@@ -16,4 +16,4 @@ jobs:
         - name: Executing shell script
           run: |
             chmod +x ascii-script.sh
-            C:\Users\Dell\OneDrive\Desktop\ACTION-1\.github\workflows\ascii-script.sh
+            .github\workflows\ascii-script.sh
