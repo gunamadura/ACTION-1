@@ -10,9 +10,10 @@ jobs:
         strategy:
             matrix:
                 os: [ubuntu-latest, windows-latest] 
+                images: [hello-world,alpine]
         steps:
         - name: Echo Dockmer Details
           run: docker info
         
-        - name: Run Images
-          run: docker run hello-world
+        - name: Run Image ${{ matrix.os }}
+          run: docker run ${{ matrix.images }}
